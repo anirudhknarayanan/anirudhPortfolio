@@ -19,21 +19,25 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">AKN<span>.</span></a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#expertise" class="nav-link">Expertise</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
+    <nav class="floating-navbar" id="navbar">
+        <a href="#home" class="home-icon-link nav-link" aria-label="Home">
+            <i class="fas fa-home"></i>
+        </a>
+        
+        <ul class="floating-nav-links" id="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skill</a></li>
+            <li><a href="#projects" class="nav-link">Projet</a></li>
+            <li><a href="#services" class="nav-link">Service</a></li>
+            <li>
+                <a href="#contact" class="nav-link get-in-touch-link">
+                    Get in Touch <i class="fas fa-arrow-up-right-from-square" style="font-size: 0.8em; margin-left: 6px;"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
         </div>
     </nav>
 
@@ -72,16 +76,25 @@
                 
                 <div class="hero-stats hidden">
                     <div class="stat-item">
-                        <h2>+2</h2>
-                        <p>YEARS OF<br>EXPERIENCE</p>
+                        <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="stat-text">
+                            <h2>5+</h2>
+                            <p>Tech<br>Stack</p>
+                        </div>
                     </div>
                     <div class="stat-item">
-                        <h2>+15</h2>
-                        <p>PROJECTS<br>COMPLETED</p>
+                        <div class="stat-icon"><i class="fas fa-bullseye"></i></div>
+                        <div class="stat-text">
+                            <h2>100%</h2>
+                            <p>Commitment</p>
+                        </div>
                     </div>
                     <div class="stat-item">
-                        <h2>100%</h2>
-                        <p>CLIENT<br>SATISFACTION</p>
+                        <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="stat-text">
+                            <h2>24+</h2>
+                            <p>Learning<br>Mode</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -103,26 +116,61 @@
             </div>
             <div class="about-grid">
                 <div class="about-text hidden">
-                    <p>I started my journey into tech out of pure curiosity, which quickly evolved into a deep-seeded passion for software development. As a <strong>self-taught developer</strong>, I've embraced the challenge of learning complex concepts from scratch, seamlessly transitioning into a capable Software Engineer.</p>
-                    <p>I thrive on translating ideas into functional, real-world web applications and thrive in environments where creativity meets structured problem-solving. Beyond coding, I have a strong interest in <strong>public speaking</strong> and sharing knowledge with the broader community.</p>
-                    <p>I believe in continuous learning, clean architecture, and building products that make a positive impact.</p>
+                    <p>Hi, I’m Anirudh K N, a passionate and <strong>self-taught MERN Stack Developer</strong> with a strong interest in building modern, user-friendly web applications.</p>
+                    <p>My journey into tech started with curiosity and dedication, and over time I have developed solid skills in JavaScript, Node.js, Express.js, MongoDB, and frontend technologies. I enjoy turning ideas into real-world applications that solve problems and create meaningful user experiences.</p>
+                    <p>Before transitioning into software development, I worked as a <strong>pharmacy assistant</strong>, which helped me build discipline, attention to detail, and strong work ethics. Today, I bring the same commitment into my development work.</p>
+                    <p>I’m continuously learning and improving my skills every day—whether it's mastering backend architecture, working with databases, or building full-stack applications.</p>
+                    <p>Apart from coding, I’m also interested in <strong>public speaking</strong>, self-improvement, and communication, which helps me collaborate better and present ideas effectively.</p>
+                    <p>My goal is to grow as a professional developer, contribute to impactful projects, and be part of a team where I can learn, build, and innovate.</p>
                     <a href="https://drive.google.com/file/d/1Rv8P7USOIfjVxMkR0NnbBFKRoXdwegUb/view?usp=sharing" target="_blank" class="btn primary-btn" style="margin-top: 25px;"><i class="fas fa-file-pdf" style="margin-right: 8px;"></i> Download Resume</a>
                 </div>
-                <div class="about-stats hidden">
-                    <div class="stat-card">
-                        <i class="fas fa-code"></i>
-                        <h3>100k+</h3>
-                        <p>Lines of Code</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>100%</h3>
-                        <p>Self-Taught</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-microphone"></i>
-                        <h3>Active</h3>
-                        <p>Public Speaker</p>
+                <div class="tech-roadmap-container hidden">
+                    <h3 class="roadmap-heading">Tech Learning Roadmap</h3>
+                    <div class="tech-roadmap">
+                        <div class="road-path">
+                            <div class="animated-glow"></div>
+                        </div>
+                        
+                        <div class="tech-node left">
+                            <div class="node-icon"><i class="fab fa-html5" style="color: #E34F26;"></i></div>
+                            <span class="node-name">HTML</span>
+                        </div>
+                        <div class="tech-node right">
+                            <div class="node-icon"><i class="fab fa-css3-alt" style="color: #1572B6;"></i></div>
+                            <span class="node-name">CSS</span>
+                        </div>
+                        <div class="tech-node left">
+                            <div class="node-icon"><i class="fab fa-bootstrap" style="color: #7952B3;"></i></div>
+                            <span class="node-name">Bootstrap</span>
+                        </div>
+                        <div class="tech-node right">
+                            <div class="node-icon"><i class="fab fa-js" style="color: #F7DF1E;"></i></div>
+                            <span class="node-name">JavaScript</span>
+                        </div>
+                        <div class="tech-node left">
+                            <div class="node-icon"><i class="fab fa-node-js" style="color: #339933;"></i></div>
+                            <span class="node-name">Node.js</span>
+                        </div>
+                        <div class="tech-node right">
+                            <div class="node-icon"><i class="fas fa-server" style="color: #888;"></i></div>
+                            <span class="node-name">Express</span>
+                        </div>
+                        <div class="tech-node left">
+                            <div class="node-icon"><i class="fas fa-leaf" style="color: #47A248;"></i></div>
+                            <span class="node-name">MongoDB</span>
+                        </div>
+                        <div class="tech-node right">
+                            <div class="node-icon"><i class="fas fa-code" style="color: #3178C6;"></i></div>
+                            <span class="node-name">TypeScript</span>
+                        </div>
+                        <div class="tech-node left">
+                            <div class="node-icon"><i class="fas fa-database" style="color: #336791;"></i></div>
+                            <span class="node-name">SQL</span>
+                        </div>
+                        <div class="tech-node right">
+                            <div class="node-icon"><i class="fab fa-react" style="color: #61DAFB;"></i></div>
+                            <span class="node-name">React</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,89 +184,125 @@
                 <h2>My Skills</h2>
                 <div class="divider"></div>
             </div>
-            <div class="skills-grid">
-                <div class="skill-category hidden">
-                    <div class="skill-icon">
-                        <i class="fas fa-laptop-code"></i>
+            <div class="skills-grid-v2">
+                <!-- Frontend Development -->
+                <div class="skill-card-v2 hidden">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-glow">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <div class="skill-tags-v2">
+                            <span class="skill-tag-v2">HTML5</span>
+                            <span class="skill-tag-v2">CSS3</span>
+                            <span class="skill-tag-v2">JavaScript</span>
+                            <span class="skill-tag-v2">Bootstrap</span>
+                            <span class="skill-tag-v2">Responsive Design</span>
+                        </div>
+                        <div class="skill-progress-container-v2">
+                            <div class="skill-progress-bar-v2" style="width: 90%;"></div>
+                        </div>
                     </div>
-                    <h3>Frontend</h3>
-                    <ul class="skill-list">
-                        <li>HTML5</li>
-                        <li>CSS3 (Flexbox/Grid)</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React.js</li>
-                    </ul>
                 </div>
-                <div class="skill-category hidden" style="transition-delay: 100ms;">
-                    <div class="skill-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Backend</h3>
-                    <ul class="skill-list">
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>REST API Architecture</li>
-                    </ul>
-                </div>
-                <div class="skill-category hidden" style="transition-delay: 200ms;">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Database</h3>
-                    <ul class="skill-list">
-                        <li>MongoDB</li>
-                        <li>Mongoose ODM</li>
-                        <li>NoSQL Data Modeling</li>
-                    </ul>
-                </div>
-                <div class="skill-category hidden" style="transition-delay: 300ms;">
-                    <div class="skill-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Other Tools</h3>
-                    <ul class="skill-list">
-                        <li>Git & GitHub</li>
-                        <li>Postman</li>
-                        <li>VS Code</li>
-                        <li>Figma</li>
-                        <li>AWS</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="expertise section">
-        <div class="container">
-            <div class="section-header hidden">
-                <h2>My Expertise</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="expertise-grid">
-                <div class="expertise-card hidden">
-                    <div class="card-glow"></div>
-                    <i class="fas fa-layer-group"></i>
-                    <h3>Full Stack Development</h3>
-                    <p>End-to-end web application development leveraging the MERN stack for scalable, performant platforms.</p>
+                <!-- Backend Development -->
+                <div class="skill-card-v2 hidden" style="transition-delay: 100ms;">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-glow">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <div class="skill-tags-v2">
+                            <span class="skill-tag-v2">Node.js</span>
+                            <span class="skill-tag-v2">Express.js</span>
+                            <span class="skill-tag-v2">REST APIs</span>
+                            <span class="skill-tag-v2">Authentication</span>
+                            <span class="skill-tag-v2">Server Logic</span>
+                        </div>
+                        <div class="skill-progress-container-v2">
+                            <div class="skill-progress-bar-v2" style="width: 85%;"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="expertise-card hidden" style="transition-delay: 100ms;">
-                    <div class="card-glow"></div>
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Frontend Development</h3>
-                    <p>Crafting responsive, accessible, and high-performance user interfaces with modern web aesthetics.</p>
+
+                <!-- Database Management -->
+                <div class="skill-card-v2 hidden" style="transition-delay: 200ms;">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-glow">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database Management</h3>
+                        <div class="skill-tags-v2">
+                            <span class="skill-tag-v2">MongoDB</span>
+                            <span class="skill-tag-v2">Mongoose</span>
+                            <span class="skill-tag-v2">Schema Design</span>
+                            <span class="skill-tag-v2">Aggregation</span>
+                            <span class="skill-tag-v2">Optimization</span>
+                        </div>
+                        <div class="skill-progress-container-v2">
+                            <div class="skill-progress-bar-v2" style="width: 80%;"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="expertise-card hidden" style="transition-delay: 200ms;">
-                    <div class="card-glow"></div>
-                    <i class="fas fa-cogs"></i>
-                    <h3>Backend Development</h3>
-                    <p>Building robust server-side logic and secure APIs capable of handling complex business rules and data.</p>
+
+                <!-- Tools & Workflow -->
+                <div class="skill-card-v2 hidden" style="transition-delay: 300ms;">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-glow">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Workflow</h3>
+                        <div class="skill-tags-v2">
+                            <span class="skill-tag-v2">Git</span>
+                            <span class="skill-tag-v2">GitHub</span>
+                            <span class="skill-tag-v2">VS Code</span>
+                            <span class="skill-tag-v2">Postman</span>
+                            <span class="skill-tag-v2">npm</span>
+                        </div>
+                        <div class="skill-progress-container-v2">
+                            <div class="skill-progress-bar-v2" style="width: 95%;"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="expertise-card hidden" style="transition-delay: 300ms;">
-                    <div class="card-glow"></div>
-                    <i class="fas fa-brain"></i>
-                    <h3>Problem Solving</h3>
-                    <p>Translating complex requirements into clean algorithms and logical code architectures.</p>
+
+                <!-- Core Concepts -->
+                <div class="skill-card-v2 hidden" style="transition-delay: 400ms;">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-glow">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Core Concepts</h3>
+                        <div class="skill-tags-v2">
+                            <span class="skill-tag-v2">Data Structures</span>
+                            <span class="skill-tag-v2">Algorithms</span>
+                            <span class="skill-tag-v2">Problem Solving</span>
+                            <span class="skill-tag-v2">System Design</span>
+                            <span class="skill-tag-v2">Clean Code</span>
+                        </div>
+                        <div class="skill-progress-container-v2">
+                            <div class="skill-progress-bar-v2" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="skill-card-v2 hidden" style="transition-delay: 500ms;">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-glow">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Professional Skills</h3>
+                        <div class="skill-tags-v2">
+                            <span class="skill-tag-v2">Research</span>
+                            <span class="skill-tag-v2">Documentation</span>
+                            <span class="skill-tag-v2">Debugging</span>
+                            <span class="skill-tag-v2">Learning</span>
+                            <span class="skill-tag-v2">Collaboration</span>
+                        </div>
+                        <div class="skill-progress-container-v2">
+                            <div class="skill-progress-bar-v2" style="width: 90%;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -231,81 +315,97 @@
                 <h2>Featured Projects</h2>
                 <div class="divider"></div>
             </div>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card hidden">
-                    <div class="project-img-wrapper">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link" title="GitHub Repo"><i class="fab fa-github"></i></a>
+            
+            <div class="projects-list-v3">
+                <!-- Project 1: TakeYourTime -->
+                <div class="project-card-v3 reveal-left hidden">
+                    <div class="project-img-side">
+                        <div class="browser-ui">
+                            <div class="browser-header">
+                                <div class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="browser-address">www.takeyourtime.world</div>
+                                <div class="live-status-tag">LIVE PROJECT</div>
                             </div>
+                            <img src="images/takeyourtime.png" alt="TakeYourTime Watches" class="project-img-real">
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>E-commerce Web App</h3>
-                        <p>A full-featured online store with user authentication, advanced product search, dynamic cart management, and seamless secure checkout handling.</p>
-                        <div class="tech-stack">
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Express</span>
+                    <div class="project-content-side">
+                        <h3>TakeYourTime</h3>
+                        <p class="project-subtitle">Full-Stack Luxury E-Commerce</p>
+                        <p class="description">A production-ready e-commerce platform designed for selling premium watches. Built with a focus on elegant UI, secure session management, and a clean data handling architecture.</p>
+                        
+                        <ul class="features-list-v3">
+                            <li><i class="fas fa-check-circle"></i> Secure user authentication & session management</li>
+                            <li><i class="fas fa-check-circle"></i> Dynamic product catalog with advanced filtering</li>
+                            <li><i class="fas fa-check-circle"></i> Complete shopping cart and order management</li>
+                            <li><i class="fas fa-check-circle"></i> Admin dashboard for inventory control</li>
+                        </ul>
+
+                        <div class="tech-container-v3">
+                             <div class="tech-badge-v4"><i class="fab fa-node-js"></i> Node.js</div>
+                             <div class="tech-badge-v4"><i class="fas fa-server"></i> Express.js</div>
+                             <div class="tech-badge-v4"><i class="fas fa-leaf"></i> MongoDB</div>
+                             <div class="tech-badge-v4"><i class="fab fa-js"></i> JavaScript</div>
+                             <div class="tech-badge-v4"><i class="fas fa-file-code"></i> Handlebars (HBS)</div>
                         </div>
-                        <div class="project-action-btns">
-                            <a href="#" class="btn-small"><i class="fas fa-play"></i> Live Demo</a>
-                            <a href="#" class="btn-small outline"><i class="fab fa-github"></i> GitHub</a>
+
+                        <div class="project-links-v4">
+                            <a href="https://takeyourtime.world" target="_blank" class="btn-project btn-live">
+                                <i class="fas fa-external-link-alt"></i> Live Website
+                            </a>
+                            <a href="https://github.com/anirudhknarayanan/takeyourtime" target="_blank" class="btn-project btn-code">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card hidden" style="transition-delay: 100ms;">
-                    <div class="project-img-wrapper">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link" title="GitHub Repo"><i class="fab fa-github"></i></a>
+                <!-- Project 2: Fat Loss Diet Plan -->
+                <div class="project-card-v3 reveal-right hidden" style="transition-delay: 150ms;">
+                    <div class="project-img-side">
+                        <div class="browser-ui">
+                            <div class="browser-header">
+                                <div class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="browser-address">fat-lossdiet-plan.vercel.app</div>
+                                <div class="live-status-tag">LIVE PROJECT</div>
                             </div>
+                            <img src="images/dietplan.webp" alt="Fat Loss Diet Plan" class="project-img-real">
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Admin Dashboard System</h3>
-                        <p>A comprehensive corporate dashboard allowing administrators to visualize metrics, manage user roles, and generate system reports effectively.</p>
-                        <div class="tech-stack">
-                            <span>React.js</span>
-                            <span>Node.js</span>
-                            <span>Chart.js</span>
+                    <div class="project-content-side">
+                        <h3>Fat Loss Diet Plan</h3>
+                        <p class="project-subtitle">Personalized Health & Nutrition App</p>
+                        <p class="description">A data-driven nutrition application that generates custom fat loss diet plans. By inputting individual metrics, users receive a scientifically calculated meal plan along with a comprehensive weekly shopping list.</p>
+                        
+                        <ul class="features-list-v3">
+                            <li><i class="fas fa-check-circle"></i> Accurate TDEE & Macro-nutrient calculations</li>
+                            <li><i class="fas fa-check-circle"></i> Automated 7-day diversified meal plan generation</li>
+                            <li><i class="fas fa-check-circle"></i> Dynamic weekly grocery & ingredient list</li>
+                            <li><i class="fas fa-check-circle"></i> Clean, responsive dashboard for mobile tracking</li>
+                        </ul>
+
+                        <div class="tech-container-v3">
+                             <div class="tech-badge-v4"><i class="fab fa-html5"></i> HTML/CSS</div>
+                             <div class="tech-badge-v4"><i class="fab fa-js-square"></i> JavaScript</div>
+                             <div class="tech-badge-v4"><i class="fas fa-shopping-basket"></i> Shopping List API</div>
                         </div>
-                        <div class="project-action-btns">
-                            <a href="#" class="btn-small"><i class="fas fa-play"></i> Live Demo</a>
-                            <a href="#" class="btn-small outline"><i class="fab fa-github"></i> GitHub</a>
+
+                        <div class="project-links-v4">
+                            <a href="https://fat-lossdiet-plan.vercel.app/" target="_blank" class="btn-project btn-live">
+                                <i class="fas fa-external-link-alt"></i> Live Website
+                            </a>
+                            <a href="https://github.com/anirudhknarayanan/FatLossdietPlan" target="_blank" class="btn-project btn-code">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card hidden" style="transition-delay: 200ms;">
-                    <div class="project-img-wrapper">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link" title="GitHub Repo"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Diet Plan Generator</h3>
-                        <p>An interactive health tool that calculates metabolic needs using user-specific metrics and automatically constructs a varied 7-day meal plan.</p>
-                        <div class="tech-stack">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="project-action-btns">
-                            <a href="#" class="btn-small"><i class="fas fa-play"></i> Live Demo</a>
-                            <a href="#" class="btn-small outline"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
